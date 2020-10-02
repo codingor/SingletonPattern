@@ -6,7 +6,21 @@ namespace SingletonPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+        }
+    }
+
+    public sealed class Singleton
+    {
+        private static readonly Singleton instance = new Singleton();
+        public Singleton()
+        {
+
+        }
+
+        public static Singleton GetInstance()
+        {
+            return instance;
         }
     }
 }
